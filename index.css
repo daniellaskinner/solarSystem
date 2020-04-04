@@ -1,0 +1,93 @@
+@keyframes orbit {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes twinkle {
+    0% {fill: rgb(255, 255, 255);}
+    100% {fill: rgb(0, 0, 0);}
+}
+
+@keyframes rainbow-background {
+    0% {
+        fill: rgba(148, 0, 211, 0.5);
+    }
+    10% {
+        fill: rgba(75, 0, 130, 0.5);
+    }
+    20% {
+        fill: rgba(0, 0, 255, 0.5);
+    }
+    30% {
+        fill: rgba(53, 161, 232, 0.5);
+    }
+    40% {
+        fill: rgba(0, 255, 0, 0.5);
+    }
+    50% {
+        fill: rgba(255, 255, 0, 0.5);
+    }
+    60% {
+        fill: rgba(255, 162, 0, 0.5);
+    }
+    70% {
+        fill: rgba(255, 127, 0, 0.5);
+    }
+    80% {
+        fill: rgba(255, 0 , 0, 0.5);
+    }
+    90% {
+        fill: rgba(255, 105, 180, 0.5);
+    }
+    100% {
+        fill: rgba(242, 58, 205, 0.5);
+    }
+}
+
+.planet-brick {
+    animation: orbit 15s linear infinite;
+    transform-origin: center;
+}
+
+.planet-purple {
+    animation: orbit 10s linear infinite;
+    transform-origin: center;
+}
+
+.planet-orange {
+    animation: orbit 12s linear infinite;
+    transform-origin: center;
+}
+
+.planet-green {
+    animation: orbit 7s linear infinite;
+    transform-origin: center;
+}
+
+.planet-red {
+    animation: orbit 20s linear infinite;
+    transform-origin: center;
+}
+
+.star {
+    animation: twinkle 1.5s infinite ease;
+}
+
+.star2 {
+    animation: twinkle 1.5s infinite ease;
+    animation-delay: 2s;
+}
+
+.star3 {
+    animation: twinkle 1.5s infinite ease;
+    animation-delay: 3s;
+}
+
+/* @keyframes ufoMove {
+  0% {transform: translate(0, 0)}
+  100% {transform: translate(0.5,2.5)}
+} */
+
+.ufo {
+    animation: rainbow-background 3s linear infinite;
+}

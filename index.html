@@ -1,0 +1,102 @@
+<head>
+    <title>Solar system</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<svg width="800" height="800">
+
+    <rect width="800" height="800" x="0" y="0" style="fill: rgb(0, 0, 0);"/>
+
+    <!--     orbits -->
+    <circle r="280" cx="400" cy="400" style="stroke: rgb(255, 255, 255); stroke-width: 1;"/>
+    <circle r="245" cx="400" cy="400" style="stroke: rgb(255, 255, 255); stroke-width: 1;"/>
+    <circle r="210" cx="400" cy="400" style="stroke: rgb(255, 255, 255); stroke-width: 1;"/>
+    <circle r="175" cx="400" cy="400" style="stroke: rgb(255, 255, 255); stroke-width: 1;"/>
+    <circle r="140" cx="400" cy="400" style="stroke: rgb(255, 255, 255); stroke-width: 1;"/>
+    <circle r="105" cx="400" cy="400" style="stroke: rgb(255, 255, 255); stroke-width: 1;"/>
+
+    <!--       sun -->
+    <defs>
+        <radialGradient id="sunGradient">
+            <stop offset="65%" stop-color="rgb(237, 234, 24)"/>
+            <stop offset="98%" stop-color="rgb(0, 0, 0)" />
+        </radialGradient>
+    </defs>
+    <circle r="75" cx="400" cy="400" fill="url('#sunGradient')"/>
+
+    <!--       planets -->
+    <circle class="planet-green" r="23" cx="50%" cy="190"; stroke: rgb(22, 130, 98); fill="url('#greenPlanetGradient')"/>
+    <circle class="planet-brick" r="30" cx="50%" cy="120"; stroke: rgb(130, 49, 22); fill="url('#brickPlanetGradient')"/>
+    <circle class="planet-red" r="12" cx="50%" cy="645"; stroke: rgb(130, 22, 49); fill="url('#redPlanetGradient')"/>
+    <circle class="planet-orange" r="20" cx="50%" cy="573"; stroke: rgb(235, 151, 33); fill="url('#orangePlanetGradient')"/>
+    <circle class="planet-purple" r="17" cx="50%" cy="505"; stroke: rgb(161, 33, 235); fill="url('#purplePlanetGradient')"/>
+
+    <!--       planets glow effect -->
+    <defs>
+        <radialGradient id="greenPlanetGradient">
+            <stop offset="65%" stop-color="rgb(22, 130, 98)"/>
+            <stop offset="98%" stop-color="rgb(0, 0, 0)" />
+        </radialGradient>
+    </defs>
+    <defs>
+        <radialGradient id="brickPlanetGradient">
+            <stop offset="65%" stop-color="rgb(130, 49, 22)"/>
+            <stop offset="98%" stop-color="rgb(0, 0, 0)" />
+        </radialGradient>
+    </defs>
+    <defs>
+        <radialGradient id="redPlanetGradient">
+            <stop offset="65%" stop-color="rgb(130, 22, 49)"/>
+            <stop offset="98%" stop-color="rgb(0, 0, 0)" />
+        </radialGradient>
+    </defs>
+    <defs>
+        <radialGradient id="orangePlanetGradient">
+            <stop offset="65%" stop-color="rgb(235, 151, 33)"/>
+            <stop offset="98%" stop-color="rgb(0, 0, 0)" />
+        </radialGradient>
+    </defs>
+    <defs>
+        <radialGradient id="purplePlanetGradient">
+            <stop offset="65%" stop-color="rgb(161, 33, 235)"/>
+            <stop offset="98%" stop-color="rgb(0, 0, 0)" />
+        </radialGradient>
+    </defs>
+
+    <!--       stars -->
+    <circle class="star" r="1.3" cx="200" cy="100" style="fill: rgb(255, 255, 255);"/>
+    <circle class="star2" r="1.5" cx="100" cy="70" style="fill: rgb(255, 255, 255);"/>
+    <circle class="star" r="1.7" cx="30" cy="30" style="fill: rgb(255, 255, 255);"/>
+    <circle class="star3" r="1" cx="700" cy="30" style="fill: rgb(255, 255, 255);"/>
+    <circle class="star" r="1.3" cx="100" cy="600" style="fill: rgb(255, 255, 255);"/>
+    <circle class="star3" r="1.5" cx="70" cy="700" style="fill: rgb(255, 255, 255);"/>
+    <circle class="star2" r="1.7" cx="700" cy="710" style="fill: rgb(255, 255, 255);"/>
+    <circle class="star" r="2" cx="500" cy="780" style="fill: rgb(255, 255, 255);"/>
+    <circle class="star3" r="2" cx="750" cy="380" style="fill: rgb(255, 255, 255);"/>
+    <circle class="star2" r="1.3" cx="220" cy="120" style="fill: rgb(255, 255, 255);"/>
+    <circle class="star3" r="1.3" cx="155" cy="300" style="fill: rgb(255, 255, 255);"/>
+    <circle class="star2" r="1.7" cx="15" cy="45" style="fill: rgb(255, 255, 255);"/>
+    <circle class="star" r="2" cx="785" cy="40" style="fill: rgb(255, 255, 255);"/>
+    <circle class="star2" r="1.3" cx="195" cy="670" style="fill: rgb(255, 255, 255);"/>
+    <circle class="star2" r="1.4" cx="100" cy="730" style="fill: rgb(255, 255, 255);"/>
+    <circle class="star" r="1.7" cx="670" cy="690" style="fill: rgb(255, 255, 255);"/>
+    <circle class="star2" r="2" cx="450" cy="795" style="fill: rgb(255, 255, 255);"/>
+    <circle class="star3" r="2" cx="680" cy="550" style="fill: rgb(255, 255, 255);"/>
+    <circle class="star" r="1.2" cx="50" cy="500" style="fill: rgb(255, 255, 255);"/>
+    <circle class="star3" r="1.2" cx="40" cy="300" style="fill: rgb(255, 255, 255);"/>
+    <circle class="star2" r="1.4" cx="65" cy="225" style="fill: rgb(255, 255, 255);"/>
+    <circle class="star" r="1.3" cx="55" cy="370" style="fill: rgb(255, 255, 255);"/>
+    <circle class="star2" r="1.1" cx="720" cy="260" style="fill: rgb(255, 255, 255);"/>
+    <circle class="star2" r="1.2" cx="450" cy="260" style="fill: rgb(255, 255, 255);"/>
+    <circle class="star" r="1" cx="520" cy="500" style="fill: rgb(255, 255, 255);"/>
+    <circle class="star" r="1.3" cx="210" cy="450" style="fill: rgb(255, 255, 255);"/>
+
+    <!--     ufo/spaceship -->
+    <ellipse class="ufo" cx="705" cy="-110" rx="60" ry="20" style="transform: rotate(20deg);"/>
+    <circle class="ufo" cx="705" cy="-115" r="40" style="transform: rotate(20deg);"/>
+
+</svg>
+
+</body>
